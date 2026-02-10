@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download APK VIP - work19-null Repository</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+            color: #f0f6fc;
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: rgba(22, 27, 34, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid #30363d;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #30363d;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #58a6ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        h1 i {
+            font-size: 2.3rem;
+        }
+        
+        .subtitle {
+            color: #8b949e;
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+        
+        .github-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #21262d;
+            padding: 8px 15px;
+            border-radius: 6px;
+            color: #c9d1d9;
+            text-decoration: none;
+            margin-top: 15px;
+            border: 1px solid #30363d;
+            transition: all 0.3s ease;
+        }
+        
+        .github-link:hover {
+            background-color: #30363d;
+            border-color: #8b949e;
+        }
+        
+        .info-box {
+            background-color: rgba(56, 139, 253, 0.1);
+            border-left: 4px solid #58a6ff;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .info-box h3 {
+            color: #58a6ff;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .file-list {
+            margin-top: 30px;
+        }
+        
+        .file-item {
+            background-color: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        
+        .file-item:hover {
+            transform: translateY(-5px);
+            border-color: #58a6ff;
+            box-shadow: 0 5px 15px rgba(88, 166, 255, 0.2);
+        }
+        
+        .file-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .file-icon {
+            font-size: 2.5rem;
+            color: #58a6ff;
+        }
+        
+        .file-details h3 {
+            font-size: 1.3rem;
+            color: #f0f6fc;
+            margin-bottom: 5px;
+        }
+        
+        .file-details p {
+            color: #8b949e;
+            font-size: 0.9rem;
+        }
+        
+        .download-btn {
+            background: linear-gradient(135deg, #238636 0%, #2ea043 100%);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .download-btn:hover {
+            background: linear-gradient(135deg, #2ea043 0%, #3fb950 100%);
+            transform: scale(1.05);
+        }
+        
+        .release-tag {
+            background-color: rgba(56, 139, 253, 0.2);
+            color: #58a6ff;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: 1px solid #30363d;
+        }
+        
+        .repo-path {
+            color: #8b949e;
+            font-family: monospace;
+            background-color: #0d1117;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            border: 1px solid #30363d;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #30363d;
+            color: #8b949e;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .file-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+            
+            .download-btn {
+                align-self: stretch;
+                justify-content: center;
+            }
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 30px;
+            color: #8b949e;
+        }
+        
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            border-top: 4px solid #58a6ff;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .release-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .release-version {
+            color: #8b949e;
+            font-size: 0.9rem;
+        }
+        
+        .update-info {
+            background-color: rgba(88, 166, 255, 0.1);
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #f78166;
+        }
+        
+        .update-info h4 {
+            color: #f78166;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fab fa-github"></i> Download APK VIP</h1>
+            <p class="subtitle">Repository: <span class="repo-path">work19-null/apk-vip</span></p>
+            <div class="release-info">
+                <span class="release-tag">Releases</span>
+                <span class="release-version">File diambil dari GitHub Releases</span>
+            </div>
+            <a href="https://github.com/work19-null/apk-vip/releases" class="github-link" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Lihat Semua Releases
+            </a>
+        </header>
+        
+        <div class="info-box">
+            <h3><i class="fas fa-info-circle"></i> Informasi</h3>
+            <p>Halaman ini menampilkan daftar file APK dari repository GitHub <strong>work19-null/apk-vip</strong> yang diambil dari halaman releases. Klik tombol "Download" untuk mengunduh file APK yang diinginkan.</p>
+        </div>
+        
+        <div class="update-info">
+            <h4><i class="fas fa-sync-alt"></i> Update Terbaru</h4>
+            <p>Sekarang file APK diambil dari <strong>GitHub Releases</strong>. Semua file yang tersedia di tag release <span class="repo-path">apk-vip</span> akan ditampilkan di sini.</p>
+        </div>
+        
+        <div class="file-list" id="fileList">
+            <!-- File list akan dimuat di sini -->
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>Memuat daftar file APK dari releases...</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2026 work19-null/apk-vip | Halaman Download APK untuk GitHub Pages | Born30</p>
+            <p style="margin-top: 5px;">File diunduh langsung dari GitHub Releases</p>
+        </footer>
+    </div>
+
+    <script>
+        // URL API untuk mendapatkan releases dari repository
+        const releasesApiUrl = "https://api.github.com/repos/work19-null/apk-vip/releases";
+        
+        // Tag release spesifik yang ingin ditampilkan
+        const targetTag = "apk-vip";
+        
+        // Fungsi untuk mendapatkan file dari releases GitHub
+        async function fetchFilesFromReleases() {
+            const fileListContainer = document.getElementById('fileList');
+            
+            try {
+                // Fetch data releases dari GitHub API
+                const response = await fetch(releasesApiUrl);
+                
+                if (!response.ok) {
+                    throw new Error(`Gagal mengambil data releases: ${response.status}`);
+                }
+                
+                const releases = await response.json();
+                
+                // Cari release dengan tag yang sesuai
+                let targetRelease = releases.find(release => release.tag_name === targetTag);
+                
+                // Jika tidak ditemukan, gunakan release terbaru
+                if (!targetRelease && releases.length > 0) {
+                    targetRelease = releases[0];
+                }
+                
+                if (!targetRelease) {
+                    throw new Error("Tidak ditemukan releases di repository");
+                }
+                
+                // Kosongkan container
+                fileListContainer.innerHTML = '';
+                
+                // Filter hanya file APK
+                const apkAssets = targetRelease.assets.filter(asset => 
+                    asset.name.toLowerCase().endsWith('.apk')
+                );
+                
+                if (apkAssets.length === 0) {
+                    fileListContainer.innerHTML = `
+                        <div class="info-box">
+                            <h3><i class="fas fa-exclamation-triangle"></i> Tidak Ditemukan File APK</h3>
+                            <p>Tidak ditemukan file APK di release <strong>${targetRelease.tag_name}</strong>. Pastikan ada file dengan ekstensi .apk di halaman releases.</p>
+                            <p style="margin-top: 10px;"><a href="https://github.com/work19-null/apk-vip/releases" class="github-link" target="_blank">Periksa Releases</a></p>
+                        </div>
+                    `;
+                    return;
+                }
+                
+                // Tampilkan informasi release
+                const releaseInfo = document.createElement('div');
+                releaseInfo.className = 'info-box';
+                releaseInfo.innerHTML = `
+                    <h3><i class="fas fa-tag"></i> Release: ${targetRelease.tag_name}</h3>
+                    <p><strong>Dibuat:</strong> ${new Date(targetRelease.created_at).toLocaleDateString('id-ID')}</p>
+                    <p style="margin-top: 8px;">${targetRelease.body || 'Tidak ada deskripsi release.'}</p>
+                `;
+                fileListContainer.appendChild(releaseInfo);
+                
+                // Tambahkan setiap file APK ke dalam daftar
+                apkAssets.forEach((asset, index) => {
+                    const fileItem = document.createElement('div');
+                    fileItem.className = 'file-item';
+                    
+                    // Format ukuran file
+                    const fileSize = (asset.size / (1024*1024)).toFixed(2);
+                    
+                    fileItem.innerHTML = `
+                        <div class="file-info">
+                            <div class="file-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="file-details">
+                                <h3>${asset.name.replace('.apk', '').replace(/_/g, ' ').replace(/-/g, ' ')}</h3>
+                                <p>File APK dari release <strong>${targetRelease.tag_name}</strong></p>
+                                <p style="margin-top: 8px;">
+                                    <strong>Nama file:</strong> <span class="repo-path">${asset.name}</span> | 
+                                    <strong>Ukuran:</strong> ${fileSize} MB | 
+                                    <strong>Download:</strong> ${asset.download_count}x
+                                </p>
+                            </div>
+                        </div>
+                        <a href="${asset.browser_download_url}" class="download-btn" download>
+                            <i class="fas fa-download"></i> Download APK
+                        </a>
+                    `;
+                    
+                    fileListContainer.appendChild(fileItem);
+                });
+                
+            } catch (error) {
+                console.error("Error fetching releases:", error);
+                fileListContainer.innerHTML = `
+                    <div class="info-box" style="border-left-color: #f78166;">
+                        <h3><i class="fas fa-exclamation-triangle"></i> Gagal Memuat Data</h3>
+                        <p>Terjadi kesalahan saat mengambil data dari GitHub Releases: <strong>${error.message}</strong></p>
+                        <p style="margin-top: 10px;">Menggunakan daftar file statis sebagai fallback...</p>
+                    </div>
+                `;
+                
+                // Fallback ke daftar file statis jika API gagal
+                renderStaticFileList();
+            }
+        }
+        
+        // Fallback: Daftar file statis jika API gagal
+        function renderStaticFileList() {
+            const fileListContainer = document.getElementById('fileList');
+            
+            // Daftar file APK statis (fallback)
+            const staticApkFiles = [
+                {
+                    id: 1,
+                    name: "File APK 1",
+                    filename: "file1.apk",
+                    description: "Aplikasi VIP versi pertama dari releases",
+                    size: "15.2",
+                    downloads: "0"
+                },
+                {
+                    id: 2,
+                    name: "File APK 2", 
+                    filename: "file2.apk",
+                    description: "Aplikasi VIP versi kedua dari releases",
+                    size: "18.7",
+                    downloads: "0"
+                },
+                {
+                    id: 3,
+                    name: "File APK 3",
+                    filename: "file3.apk",
+                    description: "Aplikasi VIP versi ketiga dari releases",
+                    size: "22.1",
+                    downloads: "0"
+                },
+                {
+                    id: 4,
+                    name: "File APK 4",
+                    filename: "file4.apk",
+                    description: "Aplikasi VIP versi keempat dari releases",
+                    size: "19.5",
+                    downloads: "0"
+                },
+                {
+                    id: 5,
+                    name: "File APK 5",
+                    filename: "file5.apk",
+                    description: "Aplikasi VIP versi kelima dari releases",
+                    size: "25.3",
+                    downloads: "0"
+                }
+            ];
+            
+            // URL dasar untuk file di releases GitHub (static fallback)
+            const releasesBaseUrl = "https://github.com/work19-null/apk-vip/releases/download/apk-vip/";
+            
+            // Kosongkan container
+            fileListContainer.innerHTML = '';
+            
+            // Tambahkan informasi fallback
+            const fallbackInfo = document.createElement('div');
+            fallbackInfo.className = 'info-box';
+            fallbackInfo.innerHTML = `
+                <h3><i class="fas fa-info-circle"></i> Menggunakan Daftar File Statis</h3>
+                <p>Halaman menggunakan daftar file statis karena tidak dapat terhubung ke GitHub API. File mungkin tidak sesuai dengan releases terbaru.</p>
+                <p style="margin-top: 10px;"><a href="https://github.com/work19-null/apk-vip/releases" class="github-link" target="_blank">Kunjungi Releases Langsung</a></p>
+            `;
+            fileListContainer.appendChild(fallbackInfo);
+            
+            // Tambahkan setiap file ke dalam daftar
+            staticApkFiles.forEach(file => {
+                const fileUrl = releasesBaseUrl + file.filename;
+                
+                const fileItem = document.createElement('div');
+                fileItem.className = 'file-item';
+                
+                fileItem.innerHTML = `
+                    <div class="file-info">
+                        <div class="file-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="file-details">
+                            <h3>${file.name}</h3>
+                            <p>${file.description}</p>
+                            <p style="margin-top: 8px;">
+                                <strong>Nama file:</strong> <span class="repo-path">${file.filename}</span> | 
+                                <strong>Ukuran:</strong> ${file.size} MB
+                            </p>
+                        </div>
+                    </div>
+                    <a href="${fileUrl}" class="download-btn" download>
+                        <i class="fas fa-download"></i> Download APK
+                    </a>
+                `;
+                
+                fileListContainer.appendChild(fileItem);
+            });
+        }
+        
+        // Tambahkan efek saat tombol download diklik
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('.download-btn')) {
+                const btn = e.target.closest('.download-btn');
+                const fileName = btn.parentElement.querySelector('.file-details h3').textContent;
+                
+                // Animasi sederhana pada tombol
+                const originalContent = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Mengunduh...';
+                btn.style.opacity = '0.8';
+                
+                // Reset tombol setelah 2 detik
+                setTimeout(() => {
+                    btn.innerHTML = originalContent;
+                    btn.style.opacity = '1';
+                    
+                    // Tampilkan notifikasi
+                    alert(`Download ${fileName} telah dimulai. Jika tidak otomatis, cek folder download Anda.`);
+                }, 2000);
+            }
+        });
+        
+        // Render daftar file setelah halaman dimuat
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mengambil data dari GitHub Releases
+            fetchFilesFromReleases();
+        });
+    </script>
+</body>
+</html>
