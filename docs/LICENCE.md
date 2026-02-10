@@ -1,4 +1,4 @@
-Hak cipta null
+Hak cipta null (2026)
 
 hanya sebuah portal hiburan 
 
