@@ -1,0 +1,8 @@
+Hak cipta null
+
+hanya sebuah portal hiburan gratis
+
+aplikasi yang ditemukan diinternet sedikit perubahan kode.
+
+jadi untuk penggunaan pribadi dan anda sadari sendiri. 
+pengupload tidak bertanggung jawab akan tuntutan pengembang jika terjadi sesuatu dikemudian haril
