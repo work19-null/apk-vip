@@ -1,7 +1,113 @@
-Hak cipta null (2026)
+================================================================================
+                                LISENSI PENGGUNAAN
+================================================================================
 
-hanya sebuah portal hiburan 
+Copyright © 2026 Null. Seluruh hak cipta dilindungi undang-undang.
 
-aplikasi yang ditemukan diinternet sedikit perubahan kode.
+================================================================================
+                               PENDAHULUAN
+================================================================================
 
-jadi untuk penggunaan pribadi dan anda sadari sendiri. pengupload tidak bertanggung jawab akan tuntutan pengembang jika terjadi sesuatu dikemudian hari
+Portal ini merupakan kumpulan aplikasi hiburan semata untuk kepentingan
+edukasi dan penelitian teknologi. Setiap konten yang tersedia merupakan hasil
+eksplorasi digital dengan modifikasi kode terbatas untuk tujuan pembelajaran.
+
+================================================================================
+                               KLAUSUL UTAMA
+================================================================================
+
+1. STATUS HUKUM
+   - Aplikasi dalam portal ini berasal dari sumber internet publik
+   - Telah dilakukan modifikasi kode minimal untuk keperluan studi
+   - Tidak mengklaim kepemilikan atas karya asli pengembang
+
+2. TUJUAN PENYEDIAAN
+   - Eksperimen teknologi dan rekayasa perangkat lunak
+   - Studi kasus pengembangan aplikasi mobile
+   - Referensi arsitektur dan implementasi kode
+   - Hiburan non-komersial dalam lingkup pendidikan
+
+3. BATASAN PENGGUNAAN
+   - Hanya untuk lingkungan pengujian tertutup (sandbox environment)
+   - Penggunaan personal non-komersial semata
+   - Dilarang redistribusi dalam bentuk apapun
+   - Tidak untuk instalasi pada perangkat produksi
+
+================================================================================
+                           PERINGATAN RESMI
+================================================================================
+
+PERHATIAN! Penggunaan konten ini melibatkan risiko yang harus sepenuhnya
+ditanggung oleh PENGGUNA AKHIR. Dengan mengakses, mengunduh, atau menggunakan
+aplikasi apapun dari portal ini, Anda secara otomatis menyetujui bahwa:
+
+1. TANGGUNG JAWAB PENUH
+   - Segala konsekuensi hukum, teknis, atau finansial menjadi tanggungan eksklusif pengguna
+   - Pengelola portal tidak bertanggung jawab atas:
+     * Klaim pelanggaran hak cipta oleh pemilik asli
+     * Kerusakan perangkat atau data pengguna
+     * Gangguan keamanan sistem pengguna
+     * Tuntutan hukum dari pihak ketiga
+
+2. PELEPASAN KLAIM
+   Anda setuju untuk TIDAK PERNAH mengajukan klaim, gugatan, atau tuntutan hukum
+   terhadap:
+   - Repositori ini dan seluruh kontributornya
+   - Pengelola portal dan afiliasinya
+   - Penyedia infrastruktur hosting
+
+3. PERTANGGUNGJAWABAN INDIVIDUAL
+   Setiap pelanggaran yang dilakukan menggunakan aplikasi dari portal ini adalah
+   tanggung jawab kriminal pengguna yang bersangkutan, dan tidak memiliki
+   keterkaitan hukum dengan penyedia portal.
+
+================================================================================
+                           PERNYATAAN KESEDIAAN
+================================================================================
+
+Dengan melanjutkan akses ke portal ini, Anda secara resmi menyatakan:
+
+"SAYA MENYADARI DAN MENYETUJI bahwa penggunaan aplikasi dalam portal ini
+mengandung risiko hukum dan teknis. SAYA BERSEDIA MENANGGUNG SEGALA KONSEKUENSI
+tanpa melibatkan pengelola portal, kontributor repository, atau pihak terkait
+lainnya. SAYA DENGAN INI MELEPAS SEMUA KLAIM DAN TUNTUTAN terhadap penyedia
+layanan ini."
+
+================================================================================
+                               KETENTUAN TEKNIS
+================================================================================
+
+1. Lingkup Penggunaan:
+   - Hanya untuk tujuan akademis dan penelitian
+   - Dilarang penggunaan komersial dalam bentuk apapun
+   - Wajib melakukan audit keamanan mandiri sebelum penggunaan
+
+2. Kewajiban Pengguna:
+   - Mematuhi hukum yang berlaku di yurisdiksi masing-masing
+   - Menghormati hak kekayaan intelektual pengembang asli
+   - Menggunakan hanya dalam lingkungan yang legal
+
+3. Pembatasan Distribusi:
+   - Tidak diperbolehkan membagikan ke pihak ketiga
+   - Wajib menghapus setelah penelitian selesai
+   - Dilarang memodifikasi untuk redistribusi
+
+================================================================================
+                              KONTAK RESMI
+================================================================================
+
+Untuk pertanyaan mengenai lisensi atau pelaporan pelanggaran hak cipta:
+- GitHub Issues: https://github.com/work19-null/apk-vip/issues
+- Email: [Tidak tersedia - komunikasi hanya melalui platform publik]
+
+================================================================================
+                               CATATAN AKHIR
+================================================================================
+
+Dokumen ini merupakan perjanjian hukum yang mengikat. Jika Anda tidak setuju
+dengan ketentuan di atas, Anda diwajibkan untuk:
+1. Segera meninggalkan portal ini
+2. Menghapus semua salinan aplikasi yang telah diunduh
+3. Tidak mengakses kembali repositori ini
+
+Terakhir diperbarui: 2026
