@@ -1,9 +1,11 @@
 ##
-📦 Jumlah
-![GitHub all releases](https://img.shields.io/github/downloads/work19-null/apk-vip/total?color=blue&label=Total%20di%20Downloads%20pengguna%20sebanyak) kali.
 
 
 <div align="center">
+
+📦 Jumlah
+![GitHub all releases](https://img.shields.io/github/downloads/work19-null/apk-vip/total?color=blue&label=Total%20di%20Downloads%20pengguna%20sebanyak) kali.
+
  
  <!-- ![real time](https://raw.githubusercontent.com/ewinz19/ewinz19/refs/heads/main/assets/real-time.svg)
 -->
