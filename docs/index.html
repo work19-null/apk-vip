@@ -12,11 +12,12 @@
 
 
     <meta http-equiv="Content-Security-Policy"
-      content="default-src 'self' https:; 
-               script-src 'self' https: 'sha256-...'; 
-               style-src 'self' https: 'unsafe-inline';
-               img-src 'self' https: data:;
-               block-all-mixed-content;">
+      content="default-src 'self';
+               script-src 'self' 'unsafe-inline';
+               style-src 'self' 'unsafe-inline';
+               img-src 'self' data: https:;
+               font-src 'self' data:;
+               block-all-mixed-content">
     
     <!-- Open Graph dengan gambar publik -->
     <meta property="og:type" content="website">
