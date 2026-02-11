@@ -1,5 +1,5 @@
 ##
-![GitHub all releases](https://img.shields.io/github/downloads/work19-null/apk-vip/total?color=blue&label=Total%20di%20Downloads%20pengguna%20sebanyak) kali.
+
 
 
 <div align="center">
