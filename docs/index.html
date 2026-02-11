@@ -15,9 +15,10 @@
       content="default-src 'self';
                script-src 'self' 'unsafe-inline';
                style-src 'self' 'unsafe-inline';
+               connect-src 'self' https://api.github.com;
                img-src 'self' data: https:;
                font-src 'self' data:;
-               block-all-mixed-content">
+               upgrade-insecure-requests">
     
     <!-- Open Graph dengan gambar publik -->
     <meta property="og:type" content="website">
