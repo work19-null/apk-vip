@@ -116,7 +116,7 @@
         
         .info-box {
             background-color: rgba(56, 139, 253, 0.1);
-            border-left: 4px solid #58a6ff;
+            border-left: 4px solid #FF1493;
             padding: 15px;
             margin-bottom: 30px;
             border-radius: 0 8px 8px 0;
@@ -285,7 +285,7 @@
             padding: 10px 15px;
             border-radius: 8px;
             margin-top: 20px;
-            border-left: 4px solid #f78166;
+            border-left: 4px solid #7FFF00;
         }
         
         .tv-vip {
